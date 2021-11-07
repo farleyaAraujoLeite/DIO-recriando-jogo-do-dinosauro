@@ -1,0 +1,48 @@
+body{
+    background-image: url(estrada.png);
+    width: 100%;
+}
+
+.motocross{
+    margin-left: 10px;
+    width: 100px;
+    height:74px;
+    background-image: url(radical.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.obstaculo{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(obstaculo.png);
+}
+
+.game-over{
+    text-align: center;
+    margin-top: 50px;
+    font-family: arial;
+    color: #668;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 70000%;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0px;
+    background-image: url(estrada.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 100%;
+}
