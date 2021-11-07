@@ -7,7 +7,7 @@ let position = 0;
 
 // interceptação da tecla precionada 
 function handleKeyUp(event){
-    if(event.keyCode === 38){
+    if(event.keyCode === 32){
         if(!isJumping) {
             jump();
         }
